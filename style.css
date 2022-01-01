@@ -1,0 +1,83 @@
+body{
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+.d {
+  width: 100px;
+  height: 100px;
+  background-color: black;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 1;
+}
+.d h2 {
+  
+  color: white;
+  text-align: center;
+  font-size: 12px;
+}
+.youWin{
+  width: 100%;
+  display: none;
+  position: absolute;
+  background-color: rgb(0 0 0 / 30%);
+  left: -10px;
+  bottom: 50%; 
+  transform: translateY(50%);
+  text-align: center;
+  z-index: 100;
+}
+h1 {
+  z-index: 10;
+}
+.d:hover {
+  /* animation: bl 2000ms linear forwards; */
+}
+@keyframes bl {
+  50%{
+    border-radius: 50%;
+    left: 20%;
+  }
+  100% {
+    border-radius: 0;
+  }
+  10%{
+    background-color: brown;
+  }
+  20%{
+    background-color: burlywood;
+  }
+  30%{
+    background-color: coral;
+  }
+  40%{
+    background-color: darkblue;
+  }
+  50%{
+    background-color: blueviolet;
+    transform: rotate( 60deg);
+  }
+  60%{
+    background-color: aqua;
+  }
+  70%{
+    background-color: yellow;
+  }
+  80%{
+    background-color: limegreen;
+  }
+  90%{
+    background-color: goldenrod;
+  }
+  100%{
+    background-color:fuchsia;
+  }
+}
