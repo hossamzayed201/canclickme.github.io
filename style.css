@@ -17,6 +17,8 @@ body{
   justify-content: center;
   cursor: pointer;
   z-index: 1;
+  transition: top 500ms,
+  left 500ms ;
 }
 .d h2 {
   
