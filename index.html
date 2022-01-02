@@ -18,21 +18,21 @@
     let d = document.getElementById("dd");
     let po ;
     let dw ;
+    let strang = ["noob","^_^","fuck you","hahaha", "what you doing","x_x","Go play with your mather"];
     d.addEventListener("mouseenter", ()=> {
       po = d.style.left;
       let rund1 = Math.round(Math.random()*100) ;
       let rund2 = Math.round(Math.random()*100) ;
-
-      d.style.left = `${rund1}%`; 
-      d.style.top = `${rund2}%`; 
-
+      let rund3 = Math.round(Math.random()*(strang.length -1))
+      d.style.left = rund1 > 92 ? `92%`:`${rund1}`; 
+      d.style.top = rund2 > 92 ? `92%`:`${rund2}%`; 
+      document.querySelector("h2").innerHTML = strang[rund3];
     })
     d.addEventListener("click", ()=> {
       document.getElementById("youWin").style.display = "block";
       setTimeout(()=>{
         location.href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ";
       },3000)
-      console.log("yas")
     })
   </script>
 </body>
